@@ -1,0 +1,28 @@
+/*
+Theme Name: Ace Corporate
+Theme URI: https://yudleethemes.com/product/ace-corporate/
+Author: Yudlee Themes
+Author URI: https://yudleethemes.com
+Description: Ace Corporate is versatile, modern, cutting- edge and top-notch WordPress Theme. This theme is the perfect platform for initiating Corporate Site, Business, Portfolio, and blogging project. Built in with the most loved BOOTSTRAP CSS framework, this theme is ultra retina friendly as well as easily adapts any screen size and resolution. Ace Corporate is integrated with a Cross-Browser Compatible them and undoubtedly it works perfectly on any leading web browsers. If you are against of hiring webmasters, then Ace Corporate is all in one solution to create a website according to your own desire with its robust and powerful set of tools. It comes with Testimonial Sections, Page Layout, Blog Layout, Customizable Banner Slider and much more. Launch your project with Ace Corporate, it will help you to represent your business and corporate-related website.
+
+* Mobile-first, Responsive Layout
+* Dynamic Slider
+* Custom Colors
+* Custom Header
+* Social Links
+* Menu Description
+* Post Formats
+* The GPL v3.0 or later license. :) Use it to make something cool.
+
+For more information about Ace Corporate please go to https://yudleethemes.com/product/ace-corporate/
+Version: 1.2.2
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: one-column, two-columns, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-logo, editor-style, featured-images, footer-widgets, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, blog, education, portfolio, left-sidebar, custom-menu 
+Text Domain: ace-corporate
+
+Based on _strap [https://github.com/ptbello/_strap], a mashup of _s [https://github.com/Automattic/_s] and Bootstrap [https://github.com/twitter/bootstrap]
+*/
+.site-header {
+    height: 600px!important;
+}

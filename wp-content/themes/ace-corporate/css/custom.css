@@ -1,0 +1,17 @@
+.service-wrap .service-body {
+    padding: 0 0;
+    margin: -40px auto auto auto;
+}
+
+.service-wrap .media-wrapper .media-wrap img {
+    height: 150px;
+}
+
+.service-body h3 a {
+
+    font-size: 13px;
+}
+
+.service-wrap {
+    margin-bottom: 20px;
+}
