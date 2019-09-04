@@ -131,7 +131,7 @@ function create_news() {
         'taxonomies' => array('news'),
         'has_archive' => true,
         'capability_type' => 'post',
-        'menu_icon'   => 'dashicons-editor-help',
+        'menu_icon'   => 'dashicons-id-alt',
         'rewrite' => array('slug' => 'news'),
     ));
 }
@@ -214,7 +214,7 @@ if (1) {
 /*
  * Прячу в админке лишнее от глаз админа
  */
-//add_action('admin_menu', 'remove_admin_menu');
+add_action('admin_menu', 'remove_admin_menu');
 function remove_admin_menu() {
     remove_menu_page('options-general.php'); // Удаляем раздел Настройки
     remove_menu_page('tools.php'); // Инструменты
@@ -225,25 +225,26 @@ function remove_admin_menu() {
     remove_menu_page('edit.php?post_type=page'); // Страницы
     remove_menu_page('edit-comments.php'); // Комментарии
     remove_menu_page('link-manager.php'); // Ссылки
+    remove_menu_page('menu-pages'); // Ссылки
 
     /*
      * Плагины
      */
-    //remove_menu_page('edit.php?post_type=acf-field-group'); // cf
+    remove_menu_page('edit.php?post_type=acf-field-group'); // cf
     remove_menu_page('fm_carousel_overview'); // cf
     remove_menu_page('for-the-visually-impaired'); // cf
-    //remove_menu_page('revslider'); // cf
+    remove_menu_page('revslider'); // cf
     remove_menu_page('uptolike_settings'); // cf
-    //remove_menu_page('smart-slider3'); // cf
+    remove_menu_page('smart-slider3'); // cf
     remove_menu_page('loco'); // cf
 
 }
 
 
 //add_action( 'admin_init', 'wpse_136058_debug_admin_menu' );
-//function wpse_136058_debug_admin_menu() {
-//    echo '<pre>' . print_r( $GLOBALS[ 'menu' ], TRUE) . '</pre>';
-//}
+function wpse_136058_debug_admin_menu() {
+    echo '<pre>' . print_r( $GLOBALS[ 'menu' ], TRUE) . '</pre>';
+}
 
 
 
