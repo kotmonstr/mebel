@@ -110,10 +110,14 @@ $boxedornot = ace_corporate_boxedornot();
 
 				  	<div class="copyright-content">
 				        <p class="text-right">
-				        	<?php $copyright_link = esc_url('https://yudleethemes.com/'); ?>
-				        		<?php esc_html_e('Theme by ', 'ace-corporate');?>
-		        				<a href="<?php echo esc_url($copyright_link); ?>" target="_blank" class="dddd">
-		        					 <?php printf( esc_html__( 'Alvion','ace-corporate' ), 'Yudlee Themes' ); echo " ". get_theme_mod('my_setting2','fff'); ?>
+
+				        		Сайт разработан
+		        				<a href="<?php echo 'www.alvioeurope.ru' ?>" target="_blank" class="dddd">
+		        					 <?php printf( esc_html__( 'AlvionEurope','ace-corporate' ), 'Yudlee Themes' ); ?>
+		        				</a>
+                            <br>Тел:
+                                <a href="tel:<?php echo get_theme_mod('my_setting2','fff'); ?>" target="_blank" class="dddd">
+		        					 <?php echo " ". get_theme_mod('my_setting2','fff'); ?>
 		        				</a>
 						</p>
 				  	</div>

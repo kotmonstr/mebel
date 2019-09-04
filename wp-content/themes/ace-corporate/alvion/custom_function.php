@@ -309,3 +309,66 @@ function wpschool_api_options_page( ) {
 }
 add_action( 'admin_menu', 'wpschool_api_add_admin_menu' );
 add_action( 'admin_init', 'wpschool_api_settings_init' );
+
+function map_api_add_admin_menu( ) {
+	add_menu_page( 'Карта', 'Карта', 'manage_options', 'map-settings-page', 'map_api_options_page' );
+}
+
+function map_api_settings_init( ) {
+	register_setting( 'mapCustom', 'map_api_settings' );
+	add_settings_section(
+		'map_api_mapCustom_section',
+		__( 'Настройки', 'wordpress' ),
+		'map_api_settings_section_callback',
+		'mapCustom'
+	);
+
+	add_settings_field(
+		'map_api_text_field_0',
+		__( 'Заголовок блока', 'wordpress' ),
+		'map_api_text_field_0_render',
+		'mapCustom',
+		'map_api_mapCustom_section'
+	);
+
+	add_settings_field(
+		'map_api_select_field_1',
+		__( 'Iframe Код для карты', 'wordpress' ),
+		'map_api_select_field_1_render',
+		'mapCustom',
+		'map_api_mapCustom_section'
+	);
+}
+
+function map_api_text_field_0_render( ) {
+	$options = get_option( 'map_api_settings' );
+	?>
+    <input type='text' name='map_api_settings[map_api_text_field_0]' value='<?php echo $options['map_api_text_field_0']; ?>' style="width: 600px">
+	<?php
+}
+
+function map_api_select_field_1_render( ) {
+	$options = get_option( 'map_api_settings' );
+	?>
+    <textarea type='text' rows="10" cols="100"  name='map_api_settings[map_api_text_field_1]'><?php echo $options['map_api_text_field_1']; ?></textarea>
+	<?php
+}
+
+function map_api_settings_section_callback( ) {
+	echo __( 'Введите данные для полей','wordpress' );
+}
+
+function map_api_options_page( ) {
+	?>
+    <form action='options.php' method='post'>
+        <h2>Карта</h2>
+		<?php
+		settings_fields( 'mapCustom' );
+		do_settings_sections( 'mapCustom' );
+		submit_button();
+		?>
+    </form>
+	<?php
+}
+add_action( 'admin_menu', 'map_api_add_admin_menu' );
+add_action( 'admin_init', 'map_api_settings_init' );
