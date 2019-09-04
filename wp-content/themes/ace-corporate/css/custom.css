@@ -15,3 +15,7 @@
 .service-wrap {
     margin-bottom: 20px;
 }
+
+.portfolio .box img {
+    height: 220px !important;
+}
