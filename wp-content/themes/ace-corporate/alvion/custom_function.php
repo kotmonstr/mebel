@@ -372,3 +372,35 @@ function map_api_options_page( ) {
 }
 add_action( 'admin_menu', 'map_api_add_admin_menu' );
 add_action( 'admin_init', 'map_api_settings_init' );
+
+## заменим слово «записи» на «Слайды»
+add_filter('post_type_labels_post', 'rename_posts_labels');
+function rename_posts_labels( $labels ){
+
+
+	$new = array(
+		'name'                  => 'Слайды',
+		'singular_name'         => 'Слайд',
+		'add_new'               => 'Добавить слайд',
+		'add_new_item'          => 'Добавить слайд',
+		'edit_item'             => 'Редактировать Слайд',
+		'new_item'              => 'Новая слайд',
+		'view_item'             => 'Просмотреть слайд',
+		'search_items'          => 'Поиск слайда',
+		'not_found'             => 'Слайд не найден.',
+		'not_found_in_trash'    => 'Слайд в корзине не найден.',
+		'parent_item_colon'     => '',
+		'all_items'             => 'Все Слайды',
+		'archives'              => 'Архивы Слайд',
+		'insert_into_item'      => 'Вставить в слайд',
+		'uploaded_to_this_item' => 'Загруженные для этого слайда',
+		'featured_image'        => 'Миниатюра Слайда',
+		'filter_items_list'     => 'Фильтровать список Слайдов',
+		'items_list_navigation' => 'Навигация по списку Слайдов',
+		'items_list'            => 'Список Слайдов',
+		'menu_name'             => 'Слайды',
+		'name_admin_bar'        => 'Слайд', // пункте "добавить"
+	);
+
+	return (object) array_merge( (array) $labels, $new );
+}
