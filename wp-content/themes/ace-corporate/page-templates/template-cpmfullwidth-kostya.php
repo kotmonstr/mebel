@@ -19,8 +19,6 @@ get_header();
 
 <?php my_get_template_part('news'); ?>
 
-    <a id="map"></a>
-
 <?php  my_get_template_part('map'); ?>
 
 <?php get_footer(); ?>

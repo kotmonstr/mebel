@@ -4,6 +4,7 @@ $title =  $options['map_api_text_field_0'];
 $iframeCode =  $options['map_api_text_field_1'];
 ?>
 
+<a id="map"></a>
 <div class="fusion-fullwidth ">
     <h1 style="text-align: center"><?php echo $title ?></h1>
 	<?php echo $iframeCode ?>
