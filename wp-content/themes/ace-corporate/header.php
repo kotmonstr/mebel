@@ -158,11 +158,7 @@ $bodyclass = array($pageclass);
                                                     <a href="<?php echo esc_url(get_permalink(get_the_ID())); ?>"> <?php the_title(); ?></a>
                                                 </h1>
                                                 <p><?php echo wp_trim_words( the_excerpt(), 25, ' ...' ); ?> </p>
-                                                <a href="<?php echo esc_url(get_permalink($slider_variable->ID)); ?>"
-                                                   class="pillbtn promo-btn btn" role="button">
-                                                    <?php esc_html_e('Read More ', 'ace-corporate'); ?><i
-                                                            class="fa fa-long-arrow-right"></i>
-                                                </a>
+
                                             </div>
 
                                         </div>
