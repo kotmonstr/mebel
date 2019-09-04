@@ -31,3 +31,7 @@
    /* background-color: #92c511;*/
     color: #000;
 }
+
+.featured-image img {
+    height: 200px;
+}
