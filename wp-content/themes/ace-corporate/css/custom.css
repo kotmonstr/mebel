@@ -38,3 +38,6 @@
 .blog-content{
     height: 530px;
 }
+.blogroll{
+padding: 0 0!important;
+}
