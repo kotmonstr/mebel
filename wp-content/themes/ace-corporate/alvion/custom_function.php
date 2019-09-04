@@ -242,9 +242,9 @@ function remove_admin_menu() {
 
 
 //add_action( 'admin_init', 'wpse_136058_debug_admin_menu' );
-function wpse_136058_debug_admin_menu() {
-    echo '<pre>' . print_r( $GLOBALS[ 'menu' ], TRUE) . '</pre>';
-}
+//function wpse_136058_debug_admin_menu() {
+//    echo '<pre>' . print_r( $GLOBALS[ 'menu' ], TRUE) . '</pre>';
+//}
 
 
 
