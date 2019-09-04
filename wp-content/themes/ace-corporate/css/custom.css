@@ -8,7 +8,7 @@
 }
 
 .service-body h3 a {
-
+    font-weight: 600 !important;
     font-size: 13px;
 }
 
