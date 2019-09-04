@@ -23,3 +23,11 @@
 .testimonial-wrap {
     height: 475px;
 }
+.service-read, .promo-btn, .cp-top {
+    background-color: #92c511;
+}
+
+.service-read:hover, .promo-btn:hover, cp-top:hover{
+   /* background-color: #92c511;*/
+    color: #000;
+}
