@@ -99,7 +99,6 @@ $boxedornot = ace_corporate_boxedornot();
 					</div>
 					<?php } ?>
 	        <!-- Footer Widgets -->
-
 	        <div class="copyright clearfix">
 
 	        	<?php if ($boxedornot == 'fullwidth') {?>
