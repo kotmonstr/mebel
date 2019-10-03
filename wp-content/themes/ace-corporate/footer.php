@@ -73,7 +73,7 @@ $boxedornot = ace_corporate_boxedornot();
 	        <div class="footer-widget">
 				<div class="container">
 					<div class="row">
-					<div class="col-md-4 col-sm-12 pad0 foot-bor br0">
+					<div class="col-md-3 col-sm-12 pad0 foot-bor br0">
 						<?php 
 										echo '<h6 class="text-center"><a href="'.esc_url(admin_url("customize.php")).'"><i class="fa fa-plus-circle"></i>'.esc_html__('Assign a Widget', 'ace-corporate').'</a></h6>';
 									
@@ -87,7 +87,7 @@ $boxedornot = ace_corporate_boxedornot();
 								?>
 								
 					</div>
-					<div class="col-md-4 col-sm-12 pad0 foot-bor br0">
+					<div class="col-md-5 col-sm-12 pad0 foot-bor br0">
 						<?php 
 										echo '<h6 class="text-center"><a href="'.esc_url(admin_url("customize.php")).'"><i class="fa fa-plus-circle"></i>'.esc_html__('Assign a Widget', 'ace-corporate').'</a></h6>';
 									
