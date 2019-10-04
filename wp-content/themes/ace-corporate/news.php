@@ -25,7 +25,7 @@ $query = new WP_Query( $args );
                                 <article id="post-1">
                                     <div class="post-content entry-content">
                                         <div class="featured-image archive-thumb">
-                                            <a title="	<?php the_title(); ?>" href="#" class="post-thumbnail">
+                                            <a title="	<?php the_title(); ?>" href="<?php echo get_post_permalink() ?>" class="post-thumbnail">
 												<?php echo the_post_thumbnail(); ?>
                                                 <div class="share-mask">
                                                     <div class="share-wrap">
