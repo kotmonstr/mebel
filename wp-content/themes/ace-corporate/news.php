@@ -2,7 +2,7 @@
 wp_reset_postdata();
 
 $args  = array(
-	'numberposts' => - 1,
+	'showposts' => 3,
 	'post_type'   => 'news',
 );
 $query = new WP_Query( $args );

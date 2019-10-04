@@ -7,7 +7,8 @@ get_header();
 
 wp_reset_postdata();
 $args  = array(
-	'numberposts' => - 1,
+
+	'numberposts' => -1,
 	'post_type'   => 'news',
 );
 $query = new WP_Query( $args );
