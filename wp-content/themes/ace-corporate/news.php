@@ -20,7 +20,7 @@ $query = new WP_Query( $args );
 					?>
 
                     <div class="col-md-4 col-sm-12 text-center">
-                        <div class="blog-content clearfix">
+                        <div class="blog-content clearfix" style="position: relative">
                             <div class="blog-content-image effect-thumb">
                                 <article id="post-1">
                                     <div class="post-content entry-content">
@@ -41,8 +41,9 @@ $query = new WP_Query( $args );
                             </div>
                             <div class="blog-content-wrap">
                                 <p><?php echo wp_trim_words(the_excerpt()) ?></p>
-                                <a href="<?php echo get_post_permalink() ?>" class="btn service-read"><?php esc_html_e( 'Читать', 'ace-corporate' ); ?></a>
+
                             </div>
+                            <a href="<?php echo get_post_permalink() ?>" class="btn service-read" style="position: absolute; bottom: 30px;left:35px"><?php esc_html_e( 'Читать', 'ace-corporate' ); ?></a>
                         </div>
                     </div>
 
