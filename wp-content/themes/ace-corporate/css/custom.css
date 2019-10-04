@@ -48,3 +48,10 @@ padding: 0 0!important;
 .aboutbox .media-wrap {
     padding: 10px 0;
 }
+#promo{
+    background: #2b2b2b url('./../img/back-layout.jpg')repeat center center fixed;
+}
+
+.page-img{
+    background: url('./../img/advantage.jpg')repeat center center fixed;
+}

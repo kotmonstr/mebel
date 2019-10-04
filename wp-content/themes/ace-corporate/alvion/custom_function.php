@@ -214,7 +214,7 @@ if (1) {
 /*
  * Прячу в админке лишнее от глаз админа
  */
-add_action('admin_menu', 'remove_admin_menu');
+//add_action('admin_menu', 'remove_admin_menu');
 function remove_admin_menu() {
     remove_menu_page('options-general.php'); // Удаляем раздел Настройки
     remove_menu_page('tools.php'); // Инструменты

@@ -1,5 +1,5 @@
 <a id="line"></a>
-<section id="promo" class="section promo" style="background: #2b2b2b url(https://demo.yudleethemes.com/ace-corporate/wp-content/uploads/2018/03/pexels-photo-708392.jpeg)repeat center center fixed">
+<section id="promo" class="section promo">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center">
