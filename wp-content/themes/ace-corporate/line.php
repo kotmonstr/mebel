@@ -9,7 +9,7 @@
 					echo '<p>Кликнуть чтобы просмотреть</p>';
 					?>
 				</div>
-				<a href="#portfolio" class="pillbtn promo-btn btn" target="_blank">Просмотреть</a>
+				<a href="/галерея/" class="pillbtn promo-btn btn" target="_blank">Просмотреть</a>
 			</div>
 		</div>
 	</div>

@@ -34,7 +34,7 @@ $posts = $query->get_posts();
                                         </div>
                                         <div class="service-body">
                                             <h3>
-                                                <a href="#" class="btn service-read"><?php echo $title; ?></a>
+                                                <a href="/галерея/" class="btn service-read"><?php echo $title; ?></a>
                                             </h3>
                                             <!--                                    <a href="#" class="btn service-read">-->
 											<?php //esc_html_e( 'Read More', 'ace-corporate' ); ?><!--</a>-->
