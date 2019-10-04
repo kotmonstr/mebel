@@ -41,7 +41,7 @@ $query = new WP_Query( $args );
                             </div>
                             <div class="blog-content-wrap">
                                 <p><?php echo wp_trim_words(the_excerpt()) ?></p>
-                                <a href="#" class="btn service-read"><?php esc_html_e( 'Читать', 'ace-corporate' ); ?></a>
+                                <a href="<?php echo get_post_permalink() ?>" class="btn service-read"><?php esc_html_e( 'Читать', 'ace-corporate' ); ?></a>
                             </div>
                         </div>
                     </div>
