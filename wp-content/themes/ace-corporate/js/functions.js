@@ -51,7 +51,7 @@ jQuery(document).ready(function($) {
         arrow: true,
         slidesToScroll: 1,
         slidesToShow: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 5000,
         lazyLoad: 'ondemand'
     });
@@ -61,7 +61,7 @@ jQuery(document).ready(function($) {
         arrow: true,
         slidesToScroll: 1,
         slidesToShow: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 5000,
         lazyLoad: 'ondemand'
     });
@@ -71,7 +71,7 @@ jQuery(document).ready(function($) {
         arrow: true,
         slidesToScroll: 1,
         slidesToShow: 3,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 5000,
         lazyLoad: 'ondemand',
         responsive: [
