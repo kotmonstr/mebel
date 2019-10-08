@@ -24,6 +24,7 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
     <?php wp_head(); ?>
+    <meta name="google-site-verification" content="VP1hTC_1lENSjL4gWEUiyZyXOI2VTvK5WoRNxbe9OeY" />
 </head>
 
 <?php
